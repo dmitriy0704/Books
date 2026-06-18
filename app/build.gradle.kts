@@ -38,6 +38,16 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
     implementation(libs.androidx.recyclerview)
+
+    val roomVersion = "2.6.1"
+    implementation("androidx.room:room-runtime:$roomVersion")
+    annotationProcessor("androidx.room:room-compiler:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+
+    val lifecycle_version = "2.2.0"
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:${lifecycle_version}")
+    implementation("androidx.lifecycle:lifecycle-common-java8:${lifecycle_version}")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
